@@ -1,8 +1,8 @@
 <?php
 
 // Récupération des données du formulaire
-$id = $_POST['id'];
-$mdp = $_POST['mdp'];
+$id = $_GET['id'];
+$mdp = $_GET['mdp'];
 
 // Connexion à la base de données
 $host = 'sql107.epizy.com';
