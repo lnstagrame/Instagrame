@@ -1,0 +1,153 @@
+/* Couleurs principales */
+:root {
+  --couleur-principale: #0095F6;
+  --couleur-secondaire: #fafafa;
+  --couleur-texte: #262626;
+  font-family: Arial;
+}
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+@media only screen and (max-width: 600px) {
+  /* Modifier la taille des éléments ici */
+  #logo-instagrame {
+    width: 120px;
+    height: 35px;
+  }
+  .bouton-se-connecter {
+    width: 200px;
+    font-size: 12px;
+  }
+  .mot-de-passe {
+    width: 180px;
+    font-size: 12px;
+  }
+  .or {
+    padding-left: 30%;
+  }
+  .facebook-container {
+    padding-left: 2%;
+  }
+}
+#logo-instagrame{
+width: 175px;
+height: 51px;
+padding-left: 11%;
+padding-bottom: 30px;
+margin-top: 30px;
+
+}
+
+.box{
+  display: grid;
+  height: 100vh; /* Hauteur de l'écran */
+  place-items: center;
+  justify-self: end; /* Aligner le contenu de la grille sur le bord droit */
+}
+
+
+
+.bouton-se-connecter {
+  background-color: #4BB4F8;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  width: 270px;
+  margin-top: 10px;
+}
+
+.mot-de-passe {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #262626;
+  font-size: 13px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+
+  width: 250px;
+
+}
+
+.mot-de-passe:focus {
+  outline: none;
+  border: 1px solid #929292;
+  box-shadow: 0px 0px 2px #929292;
+}
+
+.or{
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  margin-top: 14px;
+  color: #8e8e8e;
+  font-size: 13px;
+  padding-left: 44%;
+}
+.facebook-container {
+display: flex;
+padding-left: 5%;
+align-items: center;
+}
+
+
+#facebook-logo{
+  width: 27px; 
+}
+
+.login-with-facebook{
+  color: #385185;
+  font-weight: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.aide{
+  color: #385185;
+  font-weight: 2px;
+  font-size: 13px;
+  text-decoration: none !important;
+  margin-left: 25%}
+
+  .signup{
+    text-decoration: none !important;
+    color: #31A9F7;
+    font-weight: 2px;
+  }
+
+#boite-connexion{
+  border: 1px solid #DBDBDB;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 22px;
+
+}
+
+#boite-inscripton{
+  border: 1px solid #DBDBDB;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 25px;
+  margin-top: 0px;
+  }
