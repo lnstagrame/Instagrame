@@ -29,6 +29,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     width: 120px;
     height: 35px;
   }
+  
+  body{
+  background-color: white;}
   .bouton-se-connecter {
     width: 200px;
     font-size: 12px;
